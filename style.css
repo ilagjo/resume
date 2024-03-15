@@ -10,10 +10,12 @@
 body {
     background-color: lightblue;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+
 
 .container {
     position: relative;
@@ -74,7 +76,7 @@ body {
     font-weight: 300;
 }
 
-.contactInfo {
+.contactInfo, footer{
     padding-top: 40px;
 }
 
@@ -150,10 +152,17 @@ body {
     background-color: #03a9f4;
 }
 
+/* footer {
+    position:absolute;
+    left: 0;
+    bottom: 20px;
+
+}  */
+
 footer.update {
     color:#fff;
     font-size: 14px;
-    margin-top: 60px;
+    margin-top: 260px;
 }
 
 footer.update span {
@@ -165,6 +174,8 @@ footer.update .privacy {
     font-size: 10px;
     margin-bottom: 10px;
 }
+
+/***RIGHT SIDE***/
 
 .container .right-side {
     position: relative;
