@@ -49,12 +49,12 @@ document.addEventListener('DOMContentLoaded', generateEducationInfo);
 
 // SKILLS
 var skillsData = [
-    { name: 'Html ', percentage: '100%' },
-    { name: 'css ', percentage: '90%' },
-    { name: 'javascript ', percentage: '85%' },
-    { name: 'Angular  ', percentage: '68%' },
+    { name: 'Html', percentage: '100%' },
+    { name: 'css', percentage: '90%' },
+    { name: 'javascript', percentage: '85%' },
+    { name: 'Angular', percentage: '68%' },
     { name: 'React.js', percentage: '64%' },
-    { name: 'C# ', percentage: '50%' }
+    { name: 'C#', percentage: '50%' }
 ];
 
 function generateSkills() {
