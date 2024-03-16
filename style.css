@@ -44,23 +44,6 @@ body {
     border-bottom: 1px solid rgba(235, 191, 11);
 }
 
-.profileText .imgBx {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profileText .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .profileText h2 {
     color: #fff;
     font-size: 1.5em;
@@ -99,9 +82,6 @@ body {
     cursor: pointer;    
 }
 
-/* .contactInfo ul li a {
-    text-decoration: none;
-} */
 
 .contactInfo ul li .icon {
     display: inline-block;
@@ -152,17 +132,11 @@ body {
     background-color: #03a9f4;
 }
 
-/* footer {
-    position:absolute;
-    left: 0;
-    bottom: 20px;
-
-}  */
 
 footer.update {
     color:#fff;
     font-size: 14px;
-    margin-top: 260px;
+    margin-top: 120px;
 }
 
 footer.update span {
