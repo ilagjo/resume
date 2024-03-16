@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', generateContactInfo);
 // DATI ISTRUZIONE
 var educationInfoData = [
     { year: '2020', degree: 'Laurea Magistrale in Business Management e Tecnologie Digitali', university: 'UTIU' },
-    { year: '2017', degree: 'Laurea Triennale in Ingegneria dell\'Informazione, corso Gestionale', university: 'Politecnico di Milano' }
+    { year: '2017', degree: 'Laurea Triennale in Ingegneria Industriale e dell\'Informazione', university: 'Politecnico di Milano' }
 ];
 
 function generateEducationInfo() {
