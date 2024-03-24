@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/******** VARIABLES *********/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100px;
+  background-color: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left-side {
+  position: relative;
+  background-color: #03344a;
+  padding: 40px;
+}
+.container .left-side .profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(235, 191, 11);
+}
+.container .left-side .profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.container .left-side .profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.container .left-side .contactInfo, .container .left-side footer {
+  padding-top: 40px;
+}
+.container .left-side .contactInfo .title, .container .left-side footer .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.container .left-side .contactInfo ul, .container .left-side footer ul {
+  position: relative;
+}
+.container .left-side .contactInfo ul li, .container .left-side footer ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.container .left-side .contactInfo ul li .icon, .container .left-side footer ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.container .left-side .contactInfo ul li .text, .container .left-side .contactInfo ul li a, .container .left-side footer ul li .text, .container .left-side footer ul li a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+.container .left-side .contactInfo .education li, .container .left-side footer .education li {
+  margin-bottom: 15px;
+}
+.container .left-side .contactInfo .education h5, .container .left-side footer .education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+.container .left-side .contactInfo .education h4:nth-child(2), .container .left-side footer .education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+}
+.container .left-side .contactInfo .education h4, .container .left-side footer .education h4 {
+  color: #fff;
+  font-weight: 300;
+}
+.container .left-side .contactInfo.lang .percent, .container .left-side footer.lang .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: #081921;
+  display: block;
+  margin-top: 5px;
+}
+.container .left-side .contactInfo.lang .percent div, .container .left-side footer.lang .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+.container .left-side footer.update {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 160px;
+}
+.container .left-side footer.update span {
+  color: rgb(235, 191, 11);
+}
+.container .left-side footer.update .privacy {
+  color: lightgray;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.container .right-side {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+}
+.container .right-side .about {
+  margin-bottom: 40px;
+}
+.container .right-side .about:last-child {
+  margin-bottom: 0;
+}
+.container .right-side .about .title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.container .right-side .about p {
+  color: #333;
+}
+.container .right-side .about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.container .right-side .about .box .year {
+  min-width: 150px;
+}
+.container .right-side .about .box .year h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+.container .right-side .about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+.container .right-side .about .box .text .details:first-child {
+  margin: 10px 0 5px 30px;
+}
+.container .right-side .about .box .text .details li {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+}
+.container .right-side .about .box .text .details li:before {
+  content: "•";
+  position: absolute;
+  left: -10px;
+}
+.container .right-side .about.experiences {
+  margin-bottom: 20px;
+}
+.container .right-side .about.experiences .print {
+  visibility: hidden;
+}
+.container .right-side .skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.container .right-side .skills .box h4 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 500;
+}
+.container .right-side .skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background-color: #f0f0f0;
+  display: block;
+  margin-top: 5px;
+}
+.container .right-side .skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+.container .right-side .interests ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.container .right-side .interests ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.container .right-side .interests ul li .fa-solid {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container .interests ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .year {
+    margin-bottom: 5px;
+  }
+  .interests ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

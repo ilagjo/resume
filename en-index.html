@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./build/style.css" />
+    <title>Resume</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="profileText">
+          <h2>Ilaria Colagiorgio<br /><span>Jr front-end developer</span></h2>
+        </div>
+        <div class="contactInfo">
+          <h3 class="title">Contact Info</h3>
+          <ul>
+            <li>
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="text"
+                ><a href="tel:3713809294">+39 371 3809 294</a></span
+              >
+            </li>
+            <li>
+              <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+              <span class="text"
+                ><a href="mailto:ilaria.clg@outlook.it"
+                  >ilaria.clg@outlook.it</a
+                ></span
+              >
+            </li>
+            <li>
+              <span class="icon"><i class="fa-brands fa-github"></i></span>
+              <span class="text"
+                ><a href="http://github.com/ilagjo">github.com/ilagjo</a></span
+              >
+            </li>
+            <li>
+              <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+              <span class="text"
+                ><a href="http://linkedin.com/ilaria-clg"
+                  >linkedin.com/ilaria-clg</a
+                ></span
+              >
+            </li>
+            <li>
+              <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+              <span class="text"
+                ><a href="https://maps.google.com/?q=Milan"
+                  >Milan, Italy</a
+                ></span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="contactInfo education">
+          <div id="educationInfo" class="contactInfo education">
+            <h3 class="title">Istruzione</h3>
+            <ul id="educationList"></ul>
+          </div>
+        </div>
+
+        <div class="contactInfo lang">
+          <h3 class="title">Languages</h3>
+          <ul>
+            <li>
+              <span class="text">Italian</span>
+              <span class="percent">
+                <div style="width: 98%"></div>
+              </span>
+            </li>
+            <li>
+              <span class="text">English</span>
+              <span class="percent">
+                <div style="width: 80%"></div>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <footer class="update">
+          <p class="privacy">
+            In compliance with the GDPR and the Italian Legislative Decree no.
+            196 dated 06/30/2003, I hereby authorize you to use and process my
+            personal details contained in this document
+          </p>
+          <p>Updated as of <span id="date"></span></p>
+        </footer>
+      </div>
+
+      <div class="right-side">
+        <div class="about">
+          <h2 class="title2">Summary</h2>
+          <p>I opted for front-end development because I enjoy structuring, optimizing, and streamlining processes, working on code to ensure content accessibility for all users.
+            I firmly believe that this field revolves around human connections, as it involves fostering and enhancing relationships through technical and communication skills.
+            <br>
+            I'm taking my first steps in this field and eagerly seeking opportunities to grow and make a meaningful contribution</p>
+        </div>
+        <div class="about experiences"><h2 class="title2">experiences</h2></div>
+
+        <div class="about skills"></div>
+
+        <div class="about interests">
+          <h2 class="title2">Interests</h2>
+          <ul>
+            <li><i class="fa-solid fa-pen"></i><br />writing</li>
+            <li><i class="fa-solid fa-kitchen-set"></i><br />cooking</li>
+            <li><i class="fa-solid fa-seedling"></i><br />personal growth</li>
+            <li><i class="fa-solid fa-lightbulb"></i><br />logic puzzles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

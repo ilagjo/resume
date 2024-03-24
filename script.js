@@ -46,31 +46,31 @@ document.addEventListener("DOMContentLoaded", generateContactInfo);
 
 // EDUCATION
 if (document.documentElement.lang === "it") {
-var educationInfoData = [
-  { 
-    year: "2020",
-    degree: "Laurea Magistrale in Business Management e Tecnologie Digitali",
-    university: "UTIU",
-  },
-  {
-    year: "2017",
-    degree: "Laurea Triennale in Ingegneria Industriale e dell'Informazione",
-    university: "Politecnico di Milano",
-  },
-];
+  var educationInfoData = [
+    {
+      year: "2020",
+      degree: "Laurea Magistrale in Business Management e Tecnologie Digitali",
+      university: "UTIU",
+    },
+    {
+      year: "2017",
+      degree: "Laurea Triennale in Ingegneria Industriale e dell'Informazione",
+      university: "Politecnico di Milano",
+    },
+  ];
 } else if (document.documentElement.lang === "en") {
-    var educationInfoData = [
-        { 
-          year: "2020",
-          degree: "Master Degree in Business Management and Digital Technologies",
-          university: "UTIU",
-        },
-        {
-          year: "2017",
-          degree: "Bachelor Degree in Industrial and Information Engineering",
-          university: "Politecnico di Milano",
-        },
-      ];
+  var educationInfoData = [
+    {
+      year: "2020",
+      degree: "Master Degree in Business Management and Digital Technologies",
+      university: "UTIU",
+    },
+    {
+      year: "2017",
+      degree: "Bachelor Degree in Industrial and Information Engineering",
+      university: "Politecnico di Milano",
+    },
+  ];
 }
 
 function generateEducationInfo() {
@@ -93,38 +93,116 @@ document.addEventListener("DOMContentLoaded", generateEducationInfo);
 
 //EXPERIENCES
 let experiencesData;
-if (document.documentElement.lang === "it") 
-{ experiencesData = [
-    { year: '2023', company: 'Blazar Group', title: '.NET Full-Stack Academy', description: 'Selezionata per un programma di formazione in una Academy aziendale. Acquisite conoscenze lato back-end e front-end; svolti progetti pratici per migliorare il team working, la gestione del tempo e la produttività.', skills: ['.NET', 'C#', 'SQL Server Management Studio', 'Visual Studio e Visual Studio Code', 'Git', 'HTML', 'CSS', 'JavaScript', 'Angular', 'React', 'Material UI'] },
-    { year: '2022', company: 'Lacerba.io', title: 'Percorso Front-End Development', description: 'Partecipante con borsa di studio post test attitudinale di selezione. Acquisiti i fondamenti e una prima esperienza pratica nello sviluppo front-end con progressivi gradi di approfondimento.', skills: ['HTML', 'CSS e SCSS', 'Bootstrap', 'JavaScript', 'jQuery', 'React', 'Wordpress', 'UX/UI fundamentals', 'SEO fundamentals'] }
-];
+if (document.documentElement.lang === "it") {
+  experiencesData = [
+    {
+      year: "2023",
+      company: "Blazar Group",
+      title: ".NET Full-Stack Academy",
+      description:
+        "Selezionata per un programma di formazione in una Academy aziendale. Acquisite conoscenze lato back-end e front-end; svolti progetti pratici per migliorare il team working, la gestione del tempo e la produttività.",
+      skills: [
+        ".NET",
+        "C#",
+        "SQL Server Management Studio",
+        "Visual Studio e Visual Studio Code",
+        "Git",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Angular",
+        "React",
+        "Material UI",
+      ],
+    },
+    {
+      year: "2022",
+      company: "Lacerba.io",
+      title: "Percorso Front-End Development",
+      description:
+        "Partecipante con borsa di studio post test attitudinale di selezione. Acquisiti i fondamenti e una prima esperienza pratica nello sviluppo front-end con progressivi gradi di approfondimento.",
+      skills: [
+        "HTML",
+        "CSS e SCSS",
+        "Bootstrap",
+        "JavaScript",
+        "jQuery",
+        "React",
+        "Wordpress",
+        "UX/UI fundamentals",
+        "SEO fundamentals",
+      ],
+    },
+  ];
 } else if (document.documentElement.lang === "en") {
-    experiencesData = [
-        { year: '2023', company: 'Blazar Group', title: '.NET Full-Stack Academy Attendee', description: 'Participated in an IT company\'s academy program, gaining knowledge of both back-end and front-end development. Completed hands-on projects to enhance team collaboration, time-management, and productivity skills.', skills: ['.NET', 'C#', 'SQL Server Management Studio', 'Visual Studio and Visual Studio Code', 'Git', 'HTML', 'CSS', 'JavaScript', 'Angular', 'React', 'Material UI'] },
-        { year: '2022', company: 'Lacerba.io', title: 'Front-End Developer Certificate', description: 'Received a scholarship for a training course based on the results of a selective attitudinal test. Gained fundamental knowledge and practical experience in front-end development through progressively deeper insights and projects.', skills: ['HTML', 'CSS and SCSS', 'Bootstrap', 'JavaScript', 'jQuery', 'React', 'Wordpress', 'UX/UI fundamentals', 'SEO fundamentals'] }
-    ];
+  experiencesData = [
+    {
+      year: "2023",
+      company: "Blazar Group",
+      title: ".NET Full-Stack Academy Attendee",
+      description:
+        "Participated in an IT company's academy program, gaining knowledge of both back-end and front-end development. Completed hands-on projects to enhance team collaboration, time-management, and productivity skills.",
+      skills: [
+        ".NET",
+        "C#",
+        "SQL Server Management Studio",
+        "Visual Studio and Visual Studio Code",
+        "Git",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Angular",
+        "React",
+        "Material UI",
+      ],
+    },
+    {
+      year: "2022",
+      company: "Lacerba.io",
+      title: "Front-End Developer Certificate",
+      description:
+        "Received a scholarship for a training course based on the results of a selective attitudinal test. Gained fundamental knowledge and practical experience in front-end development through progressively deeper insights and projects.",
+      skills: [
+        "HTML",
+        "CSS and SCSS",
+        "Bootstrap",
+        "JavaScript",
+        "jQuery",
+        "React",
+        "Wordpress",
+        "UX/UI fundamentals",
+        "SEO fundamentals",
+      ],
+    },
+  ];
 }
 
 const generateExperienceElements = () => {
-    const experiencesContainer = document.querySelector('.about.experiences');
+  const experiencesContainer = document.querySelector(".about.experiences");
+  if (document.documentElement.lang === "it") {
+    experiencesContainer.innerHTML = `<h2 class="title2">Esperienze</h2>`;
+  } else {
+    experiencesContainer.innerHTML = `<h2 class="title2">Experiences</h2>`;
+  }
 
-    experiencesData.map(experience => {
-        const box = document.createElement('div');
-        box.classList.add('box');
+  experiencesData.map((experience) => {
+    const box = document.createElement("div");
+    box.classList.add("box");
 
-        const { year, company, title, description, skills } = experience;
+    const { year, company, title, description, skills } = experience;
 
-        const yearCompanyHTML = `<div class="year"><h5>${year}</h5><h5>${company}</h5></div>`;
-        const textHTML = `<div class="text"><h4>${title}</h4><p>${description}</p><div class="details"><ul>${skills.map(skill => `<li>${skill}</li>`).join('')}</ul></div></div>`;
-        
-        box.innerHTML = `${yearCompanyHTML}${textHTML}`;
+    const yearCompanyHTML = `<div class="year"><h5>${year}</h5><h5>${company}</h5></div>`;
+    const textHTML = `<div class="text"><h4>${title}</h4><p>${description}</p><div class="details"><ul>${skills
+      .map((skill) => `<li>${skill}</li>`)
+      .join("")}</ul></div></div>`;
 
-        experiencesContainer.appendChild(box);
-    });
+    box.innerHTML = `${yearCompanyHTML}${textHTML}`;
+
+    experiencesContainer.appendChild(box);
+  });
 };
 
-document.addEventListener('DOMContentLoaded', generateExperienceElements);
-
+document.addEventListener("DOMContentLoaded", generateExperienceElements);
 
 // SKILLS
 var skillsData = [
@@ -159,14 +237,24 @@ function generateSkills() {
 document.addEventListener("DOMContentLoaded", generateSkills);
 
 // AGGIORNAMENTO DATA ODIERNA
-const today = new Date();
-const year = today.getFullYear();
-let month;
-if (document.documentElement.lang === "it") {
-  month = new Intl.DateTimeFormat("it", { month: "long" }).format(today);
-} else if (document.documentElement.lang === "en") {
-  month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(today);
-}
-const yearMonthString = month + " " + year;
+function updateCurrentDate() {
+  const today = new Date();
+  const year = today.getFullYear();
+  let month;
 
-document.getElementById("date").textContent = yearMonthString;
+  if (document.documentElement.lang === "it") {
+    month = new Intl.DateTimeFormat("it", { month: "long" }).format(today);
+  } else if (document.documentElement.lang === "en") {
+    month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(today);
+  }
+
+  const yearMonthString = month + " " + year;
+
+  document.getElementById("date").textContent = yearMonthString;
+}
+
+document.addEventListener("DOMContentLoaded", updateCurrentDate);
+
+
+
+
